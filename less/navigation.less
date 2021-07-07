@@ -1,1 +1,43 @@
 // Navigation Styles here
+
+nav {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0 auto;
+  @media @ipad {
+    width: 70%;
+  }
+
+  @media @tablet {
+    width: 90%;
+    padding-right: 10%;
+  }
+}
+
+a {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 10%;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: @shark;
+  @media @tablet {
+    font-size: 1.5rem;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: @white;
+  .custom-button(200px, 50px, 11px);
+  border: 1px solid;
+  border-radius: 10px;
+  background: @eastern-blue;
+  @media @tablet {
+    width: 100%;
+  }
+}
